@@ -1,5 +1,9 @@
 import About from "./components/About.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./components/Home.jsx"
+import Not from "./components/NotFound.jsx"
+import NavBar from "./components/Nav.jsx"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -7,10 +11,13 @@ function App() {
     
 
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<About/>}/>
-
-    </Routes>
+    <NavBar>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="*" element={<Not/>}/>
+        </Routes>
+    </NavBar>
     </BrowserRouter>
 
     
