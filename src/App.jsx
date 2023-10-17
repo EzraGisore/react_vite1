@@ -4,6 +4,7 @@ import Home from "./components/Home.jsx"
 import Not from "./components/NotFound.jsx"
 import NavBar from "./components/Nav.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Form from "./components/Form.jsx"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/form" element={<Form/>}/>
           <Route path="*" element={<Not/>}/>
         </Routes>
     </NavBar>
