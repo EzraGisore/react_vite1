@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "./components/Form.jsx";
 import Users from "./components/Users.jsx";
 import Tasks from "./components/Task.jsx";
+import Fruits from "./components/Fruits.jsx";
+import Products from "./components/Products.jsx";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/form" element={<Form />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/tasks" element={<Tasks />}/>
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/fruits" element={<Fruits />} />
+          <Route path="/products" element={<Products />} />
           <Route path="*" element={<Not />} />
         </Routes>
       </NavBar>
